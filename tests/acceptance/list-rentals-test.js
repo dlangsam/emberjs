@@ -3,11 +3,11 @@ import moduleForAcceptance from 'super-rentals/tests/helpers/module-for-acceptan
 
 moduleForAcceptance('Acceptance | list rentals');
 
-test('visiting /', function(assert) {
-  visit('/');
 
+test('should redirect to rentals route', function (assert) {
+  visit('/');
   andThen(function() {
-    assert.equal(currentURL(), '/');
+    assert.equal(currentURL(), '/rentals', 'should redirect automatically');
   });
 });
 
@@ -52,5 +52,14 @@ test('should show details for a specific rental', function (assert) {
     assert.equal(find('.show-listing h2').text(), "Grand Old Mansion", 'should list rental title');
     assert.equal(find('.description').length, 1, 'should list a description of the property');
   });
+});
+
+test('should transition to rentals route', function(assert) {
+  let route = this.subject({
+    replaceWith(routeName) {
+      assert.equal(routeName, 'rentals', 'replace with route name rentals');
+    }
+  });
+  route.beforeModel();
 });
 

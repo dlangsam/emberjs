@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="menu">
+    {{#link-to 'index'}}
+      <h1 class="left">
+        <em>SuperRentals</em>
+      </h1>
+    {{/link-to}}
+    <div class="left links">
+      <span>{{#link-to 'about'}}
+        About
+      {{/link-to}}
+      </span>
+      <span>
+      {{#link-to 'contact'}}
+        Contact
+      {{/link-to}}
+      </span>
+    </div>
+  </div>
+  <div class="body">
+    {{outlet}}
+  </div>
+</div>
