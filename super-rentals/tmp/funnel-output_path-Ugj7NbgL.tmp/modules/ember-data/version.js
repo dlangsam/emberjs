@@ -1,0 +1,1 @@
+/Users/devorahlangsam/Documents/WebDevelopment/super-rentals/tmp/creator-output_path-XtRpGePp.tmp/version.js

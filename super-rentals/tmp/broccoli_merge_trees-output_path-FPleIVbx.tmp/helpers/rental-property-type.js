@@ -1,0 +1,1 @@
+/Users/devorahlangsam/Documents/WebDevelopment/super-rentals/app/helpers/rental-property-type.js

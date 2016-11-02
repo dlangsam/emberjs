@@ -1,0 +1,1 @@
+/Users/devorahlangsam/Documents/WebDevelopment/super-rentals/tmp/broccoli_merge_trees-input_base_path-1GjVYNul.tmp/0/super-rentals/tests/helpers/module-for-acceptance.js
